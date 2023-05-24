@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+
+
+* {
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.container {
+    margin: 0 7rem;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+nav ul {
+   display: flex;
+   align-items: center;
+}
+
+nav ul a {
+    padding-top: 5px;
+    padding: 2rem;
+    color: aliceblue;
+
+}
+
+nav ul a:hover {
+   font-size: 15px ;
+   color: rgb(131, 212, 212);
+   transition: all 0.7s;
+}
+
+
+#home {
+    height: 100vh;
+    background: url("./أحلى-خلفيات-عن-الحاسوب.webp" ) center center/cover no-repeat;
+    color: aliceblue;
+}
+
+#home::before {
+    content: "" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+#home * {
+    z-index: 50;
+}
+
+
+
+
+
+
+#home .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+
+}
+
+#home .container .content img {
+    width: 190px;
+    animation: animation1 2s ease-out;
+}
+
+#home .content .content-text h1 {
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+#home .content .content-text span {
+    font-size: 70px;
+} 
+
+#home .content .content-text p {
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    width: 60%;
+    font-size: 20px;
+}
+
+.btn {
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    color: black;
+    transition: all 0.7s;
+
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: aliceblue;
+    border: 1px solid #fff;
+}
+
+
+.soc {
+    margin-left: 3rem;
+    animation: animation2 3s ease-out;
+
+}
+
+.soc i {
+    color: #fff;
+    font-size: 30px;
+    margin: 10px 0;
+    display: block;
+    flex-direction: column;
+    padding-bottom: 20px;
+    animation: animation2 2s ease-out;
+}
+
+
+.soc i:hover {
+ border-radius: 20px;
+ color: #a06c6c;
+ transition: all 0.7s;
+}
+
+
+
+#home .container img {
+    width: 90px;
+}
+
+@keyframes animation1 {
+
+    0% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+@keyframes animation2 {
+
+    0% {
+        transform: translateX(500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+#footer {
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    color: #000000;
+    padding: 20px 15px;
+    font-size: 14px;
+
+  }
+
+  #footer a {
+    color: #0000ff;
+  }
+
+
+  @media ( max-width: 900px ){
+
+
+
+
+    .container {
+        margin: 0 1rem;
+    }
+
+    nav ul a {
+        padding: 10px;
+    }
+
+
+
+    #home .content {
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0 0;
+    }
+
+      
+    #home .content .content-text p {
+        font-weight: 300;
+        margin-bottom: 30px;
+        line-height: 1.4;
+        width: 100%;
+    }
+    
+
+    #home .content .content-text {
+        margin-bottom: 2rem;
+    }
+
+    #home .container .content img {
+        width: 90px;
+        margin-bottom: 10cap;
+    }
+
+
+
+    .soc {
+        margin-left: 0 ;
+        animation: animation2 3s ease-out;
+        margin-bottom: 15px;
+        
+    
+    }
+
+    .soc i {
+        padding: 9px;
+    }
+    
+
+  }
+
+  @media (max-width: 600px ){
+    
+ 
+    nav {
+        display: block;
+    }
+
+
+    #home .container img {
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    .soc i {
+      display: none;
+
+  }
+
+  #home .container .content img {
+    display: none;
+  }
+
+  nav ul a {
+    padding-top: 2px;
+    padding: 10px;
+    color: aliceblue;
+
+}
+
+}
